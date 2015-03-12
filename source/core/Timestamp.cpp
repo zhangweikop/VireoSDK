@@ -314,7 +314,7 @@ void GetCurrentTimestamp(Timestamp *t)
         uInt32 tempTime = static_cast<uInt32>(ts.tv_sec);
         TToStd(&tempTime);
         *t = Timestamp( static_cast<Double>(tempTime), ts.tv_nsec / 1E9);
-
+    }
 #endif
 }
 //------------------------------------------------------------
